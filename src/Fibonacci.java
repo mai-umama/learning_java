@@ -1,0 +1,14 @@
+public class Fibonacci {
+    static int fib(int n){
+        if(n <= 1){
+            return n;
+        }
+        return (n-1)+(n-2);
+    }
+    public static void main(String[] args){
+        int n =7;
+        for (int i =0;i<n;i++){
+            System.out.print(fib(i)+ " ");
+        }
+    }
+}

@@ -1,21 +1,19 @@
 class calculation{
-    int summation(int a, int b){
-        return a+b;
+    void add(int a, int b){
+        System.out.println("Sum: " +(a+b));
     }
-    int summation(int a,int b,int c){
-        return a+b+c;
+    void add(double a, double b){
+        System.out.println("Sum: "+ (a+b));
     }
-    double summation(double a, double b){
-        return a+b;
+    void add(int a,int b, int c){
+        System.out.println("Sum: "+ (a+b+c));
     }
 }
-
-
-public class Method_overloading {
+public class Method_overloading{
     public static void main(String[] args){
-        calculation s1 = new calculation();
-        System.out.println(s1.summation(1,6));
-        System.out.println(s1.summation(1,3,5));
-        System.out.println(s1.summation(8.9,3.5));
+        calculation c = new calculation();
+        c.add(1,2);
+        c.add(5.8, 9.3);
+        c.add(7,8,9);
     }
 }
