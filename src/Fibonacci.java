@@ -1,14 +1,17 @@
-public class Fibonacci {
-    static int fib(int n){
-        if(n <= 1){
-            return n;
-        }
-        return (n-1)+(n-2);
-    }
+import java.util.Scanner;
+public class Fibonacci{
     public static void main(String[] args){
-        int n =7;
-        for (int i =0;i<n;i++){
-            System.out.print(fib(i)+ " ");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number of terms");
+        int n = sc.nextInt();
+        int a = 0;
+        int b =1;
+        int c;
+        for(int i = 0;i<n;i++){
+            System.out.println(a+" ");
+            c = a+b;
+            a= b;
+            b= c;
         }
     }
 }
